@@ -6,7 +6,7 @@ var canvasWidth = yBlock * 5;
 var xStart = xBlock/0.5;
 var yStart = yBlock/0.42;
 
-// Enemies our player must avoice
+// Enemies our player must avoid
 var Enemy = function(x, y) {
     // The image/sprite for our enemies, this uses
     // a helper provided to easily load images
