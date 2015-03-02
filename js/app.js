@@ -17,7 +17,7 @@ var Enemy = function(x, y) {
 
     // Enemies random speed
     this.speed = 200 + 100 * Math.random();
-}
+};
 
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
@@ -69,7 +69,7 @@ var Player = function(x, y) {
     // Player's start position
     this.x = xStart;
     this.y = yStart;
-}
+};
 
 Player.prototype.update = function(dt) {
     // Players boundaries for collision detection
@@ -139,6 +139,5 @@ document.addEventListener('keyup', function(e) {
         39: 'right',
         40: 'down'
     };
-
     player.handleInput(allowedKeys[e.keyCode]);
 });
